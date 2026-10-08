@@ -1,0 +1,77 @@
+case,target,excluded,k,rule,mean_budget,CI_low,CI_high,random_mean,oracle_mean,oracle_excess,random_regime,orders
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Random,46.22875,44.8868590278,47.5014166667,46.22875,17.52,28.70875,exact conditional expectation,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Proportional,50.32,48.25,52.34,46.22875,17.52,32.8,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,PQMM,40.36,38.01,42.8,46.22875,17.52,22.84,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Max-min,49.19,46.46,51.84025,46.22875,17.52,31.67,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Updated MU,41.61,39.77,43.53025,46.22875,17.52,24.09,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Updated DWU,42.69,41.12,44.25,46.22875,17.52,25.17,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Frozen MU,49.26,46.41,52.12025,46.22875,17.52,31.74,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Frozen DWU,44.12,42,46.28,46.22875,17.52,26.6,archived nonrandom paths,1
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,Cross-stratified,42.0475,40.153,43.9885,46.22875,17.52,24.5275,archived nonrandom paths,20
+Paphos,Paphian_AMG48_vs_AMG21B,none,2,APDC,44.428,43.1049375,45.6490125,46.22875,17.52,26.908,archived nonrandom paths,20
+Paphos,Kourion_five_patterns,none,2,Random,63.2569341022,62.4221682232,64.0013523337,63.2569341022,21.65,41.6069341022,exact conditional expectation,1
+Paphos,Kourion_five_patterns,none,2,Proportional,65.96,65.17975,66.59,63.2569341022,21.65,44.31,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,PQMM,69.3,66.38,72.09,63.2569341022,21.65,47.65,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,Max-min,58.72,57.41,59.86,63.2569341022,21.65,37.07,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,Updated MU,50.16,48,52.26,63.2569341022,21.65,28.51,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,Updated DWU,55.8,54.43975,57.1,63.2569341022,21.65,34.15,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,Frozen MU,57.39,53.70975,61.07025,63.2569341022,21.65,35.74,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,Frozen DWU,68.53,66.49975,70.44,63.2569341022,21.65,46.88,archived nonrandom paths,1
+Paphos,Kourion_five_patterns,none,2,Cross-stratified,54.099,51.7424875,56.4340125,63.2569341022,21.65,32.449,archived nonrandom paths,20
+Paphos,Kourion_five_patterns,none,2,APDC,52.4655,49.87245,55.0360375,63.2569341022,21.65,30.8155,archived nonrandom paths,20
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Random,80.3980714286,79.8348571429,80.9237380953,80.3980714286,19.87,60.5280714286,exact conditional expectation,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Proportional,81.37,80.28,82.49,80.3980714286,19.87,61.5,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,PQMM,93.96,93.79,94.09,80.3980714286,19.87,74.09,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Max-min,92.05,91.99,92.11,80.3980714286,19.87,72.18,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Updated MU,95.41,95.01,95.78,80.3980714286,19.87,75.54,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Updated DWU,88.77,88.24,89.31,80.3980714286,19.87,68.9,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Frozen MU,89.19,87.38,90.88,80.3980714286,19.87,69.32,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Frozen DWU,78.71,76.73,80.56025,80.3980714286,19.87,58.84,archived nonrandom paths,1
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,Cross-stratified,93.7,93.1,94,80.3980714286,19.87,73.83,archived nonrandom paths,20
+Paphos,IMPA_Koan_Thassian_subdivision,none,2,APDC,93.7,93.1,94,80.3980714286,19.87,73.83,archived nonrandom paths,20
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Random,68.7543571429,67.4579267857,69.9263369048,68.7543571429,18.06,50.6943571429,exact conditional expectation,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Proportional,76.94,74.8,78.98,68.7543571429,18.06,58.88,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,PQMM,56.32,53.1795,59.63025,68.7543571429,18.06,38.26,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Max-min,63.59,61.04975,66.22,68.7543571429,18.06,45.53,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Updated MU,50.07,48.05,52,68.7543571429,18.06,32.01,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Updated DWU,46.55,44.59,48.43,68.7543571429,18.06,28.49,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Frozen MU,58.01,54.46975,61.53,68.7543571429,18.06,39.95,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Frozen DWU,55.64,52.02,59.21,68.7543571429,18.06,37.58,archived nonrandom paths,1
+Paphos,CYPB_Paphian_Kourion_separation,none,2,Cross-stratified,79.854,75.8779875,83.6325125,68.7543571429,18.06,61.794,archived nonrandom paths,20
+Paphos,CYPB_Paphian_Kourion_separation,none,2,APDC,79.4495,75.349375,83.3555625,68.7543571429,18.06,61.3895,archived nonrandom paths,20
+Paphos,Sicily_cross_cluster_correction,none,2,Random,71.772,70.8175,72.685,71.772,18.13,53.642,exact conditional expectation,1
+Paphos,Sicily_cross_cluster_correction,none,2,Proportional,86.2,84.9,87.4,71.772,18.13,68.07,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,PQMM,73.26,71.16,75.21,71.772,18.13,55.13,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,Max-min,71.46,70.43,72.11,71.772,18.13,53.33,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,Updated MU,63.5,62.07,64.88,71.772,18.13,45.37,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,Updated DWU,54.82,53.24,56.38,71.772,18.13,36.69,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,Frozen MU,68.6,64.72,72.27,71.772,18.13,50.47,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,Frozen DWU,70.02,67.67,72.31,71.772,18.13,51.89,archived nonrandom paths,1
+Paphos,Sicily_cross_cluster_correction,none,2,Cross-stratified,26.1965,23.386,29.125125,71.772,18.13,8.0665,archived nonrandom paths,20
+Paphos,Sicily_cross_cluster_correction,none,2,APDC,28.408,28.0644875,28.759025,71.772,18.13,10.278,archived nonrandom paths,20
+Paphos,Aegean_six_unlocated_patterns,none,2,Random,89.3645336053,89.1890078144,89.5365492972,89.3645336053,25.15,64.2145336053,exact conditional expectation,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Proportional,95.02,93.86,96.04,89.3645336053,25.15,69.87,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,PQMM,96.71,96.23,97,89.3645336053,25.15,71.56,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Max-min,95.02,94.97,95.07,89.3645336053,25.15,69.87,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Updated MU,92.51,92.17,92.84,89.3645336053,25.15,67.36,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Updated DWU,88.16,87.06,89.2,89.3645336053,25.15,63.01,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Frozen MU,91.55,90.43,92.58,89.3645336053,25.15,66.4,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Frozen DWU,86.12,84.75,87.39,89.3645336053,25.15,60.97,archived nonrandom paths,1
+Paphos,Aegean_six_unlocated_patterns,none,2,Cross-stratified,96.58,96.23,96.86,89.3645336053,25.15,71.43,archived nonrandom paths,20
+Paphos,Aegean_six_unlocated_patterns,none,2,APDC,96.58,96.23,96.86,89.3645336053,25.15,71.43,archived nonrandom paths,20
+Maya,main,none,2,Random,29.0027936569,27.3287361099,30.6237731504,29.0027936569,16.5,12.5027936569,exact conditional expectation,1
+Maya,main,none,2,Proportional,25.29,23.65,26.99,29.0027936569,16.5,8.79,archived nonrandom paths,1
+Maya,main,none,2,PQMM,21.49,20.44,22.6,29.0027936569,16.5,4.99,archived nonrandom paths,1
+Maya,main,none,2,Max-min,17.6,17.16,18.05,29.0027936569,16.5,1.1,archived nonrandom paths,1
+Maya,main,none,2,Updated MU,20.43,19.6,21.27,29.0027936569,16.5,3.93,archived nonrandom paths,1
+Maya,main,none,2,Updated DWU,58.83,52.49,64.95,29.0027936569,16.5,42.33,archived nonrandom paths,1
+Maya,main,none,2,Frozen MU,32.08,28.56,35.72025,29.0027936569,16.5,15.58,archived nonrandom paths,1
+Maya,main,none,2,Frozen DWU,82.5,73.55,91.05025,29.0027936569,16.5,66,archived nonrandom paths,1
+Maya,terminal,none,2,Random,61.3864033446,60.6158791078,62.1447301019,61.3864033446,26.25,35.1364033446,exact conditional expectation,1
+Maya,terminal,none,2,Proportional,85.49,82.96,87.7505,61.3864033446,26.25,59.24,archived nonrandom paths,1
+Maya,terminal,none,2,PQMM,67.92,65.42,70.39025,61.3864033446,26.25,41.67,archived nonrandom paths,1
+Maya,terminal,none,2,Max-min,71.04,68.9,73.13025,61.3864033446,26.25,44.79,archived nonrandom paths,1
+Maya,terminal,none,2,Updated MU,65.67,62.85975,68.59025,61.3864033446,26.25,39.42,archived nonrandom paths,1
+Maya,terminal,none,2,Updated DWU,80.45,76.7,83.98,61.3864033446,26.25,54.2,archived nonrandom paths,1
+Maya,terminal,none,2,Frozen MU,86.76,81.96,91.62025,61.3864033446,26.25,60.51,archived nonrandom paths,1
+Maya,terminal,none,2,Frozen DWU,101.91,96.78975,106.85,61.3864033446,26.25,75.66,archived nonrandom paths,1
