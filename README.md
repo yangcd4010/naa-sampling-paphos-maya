@@ -1,6 +1,6 @@
 # Data and code: NAA sampling in Paphos and Classic Maya ceramics
 
-Version: v1.0.3. This release includes the retained prediction experiment, primary and sensitivity analyses, and current Figures 1–3. GitHub release: https://github.com/yangcd4010/naa-sampling-paphos-maya/releases/tag/v1.0.3. Zenodo all-versions record: https://doi.org/10.5281/zenodo.23250701; cite the version-specific DOI displayed for v1.0.3.
+Version: v1.0.4. This release adds result-informed batch-feedback and pXRF-only Paphos partition checks while preserving the original measurements, primary acquisition paths and numerical results. GitHub release: https://github.com/yangcd4010/naa-sampling-paphos-maya/releases/tag/v1.0.4. Zenodo all-versions record: https://doi.org/10.5281/zenodo.23250701; cite the version-specific DOI displayed for v1.0.4.
 
 This dataset supports the retrospective evaluation of NAA acquisition in a fixed pool of 97 Paphos amphora fragments and 183 Classic Maya ceramics.
 
@@ -8,7 +8,7 @@ This dataset supports the retrospective evaluation of NAA acquisition in a fixed
 
 `PRIMARY_RESULTS_k2.csv` is the directly readable table of primary two-member results. `SI2_reproducibility.zip` contains the necessary source inputs, reference definitions, acquisition paths, numerical results and executable analyses. Unzip it once. Its `FILE_INVENTORY.csv` lists the payload and SHA-256 digests.
 
-Primary results are in `Revision_Analysis_v5/results/primary_budget_summary.csv`; use `excluded = none` and `k = 2`. Random means are exact expectations conditional on the same fifteen-object starts. Fabric rules average twenty shared orders. Archived random paths are retained for path-level comparisons. Directory labels referenced by Supporting Information 1 remain stable identifiers.
+Original primary results are in `Revision_Analysis_v5/results/primary_budget_summary.csv`; use `excluded = none` and `k = 2`. Random means are exact expectations conditional on the same fifteen-object starts. Fabric rules average twenty shared orders. Archived random paths are retained for path-level comparisons. Directory labels referenced by Supporting Information 1 remain stable identifiers.
 
 Primary CSV fields: `case` identifies the pool; `target` identifies the reference comparison; `rule` is the algorithm key; `mean_budget` includes the initial fifteen specimens; `CI_low` and `CI_high` are pointwise resampling intervals; `random_mean` is the matched-start exact random expectation; `oracle_mean` is the membership-informed lower bound; `oracle_excess` is mean budget minus that bound; `orders` is the number of fabric orders averaged. `Proportional` is the proportional-medoid implementation. Maya `main` denotes four groups and `terminal` twelve categories.
 
@@ -87,7 +87,7 @@ python Supporting_analyses/paphos_prediction/reproduce_prediction.py --verify-ar
 
 ## Targeted supplementary analyses
 
-This release supplies the targeted supplementary analyses listed here alongside the primary analysis. Primary results and all 8,200 previously archived acquisition configurations are retained; 1,200 Maya fixed-seed paths are added to the same consolidated archive. These additions are result-informed exploratory checks. No new measured specimens, batch-feedback protocol or selection algorithm is introduced.
+This release supplies the targeted supplementary analyses listed here alongside the primary analysis. Primary results and all 8,200 previously archived acquisition configurations are retained; 1,200 Maya fixed-seed paths are added to the same consolidated archive. These additions are result-informed exploratory checks. These earlier targeted checks retain their definitions; the new batch-feedback and partition protocols are described below.
 
 | Output in `Targeted_Analyses/results` | Interpretation |
 |---|---|
@@ -127,7 +127,7 @@ Figure 2 presents Paphos paired differences. Figure 3 retains the Maya budgets a
 python Figure_Presentation/readability_figures.py --output Figure_Presentation/figures
 ```
 
-The archive contains the targeted supplementary analyses and current presentation. QA JSON, manuscript revision records, proof images and local execution checkpoints are excluded from the upload package.
+The archive contains the targeted supplementary analyses, current presentation, and V11 sensitivity analyses. QA JSON, manuscript revision records, proof images and local execution checkpoints are excluded from the upload package.
 
 ## Sources and rights
 
@@ -136,3 +136,27 @@ Paphos measurement workbooks: Hein, Dobosz and Kilikoglou (2021), Mendeley Data,
 Maya: LeMoine and Halperin (2021), https://doi.org/10.1016/j.jasrep.2021.102819, supplement mmc2. The original workbook and full raw/standardized concentration matrices are not redistributed. Obtain them under the provider's terms; the adapter and source identifiers are supplied. No publisher article PDFs or full-text extracts are included.
 
 Author-created data, derived results and documentation are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Author-created software code is licensed under the MIT License. The full MIT terms and the scope of each licence are provided in `LICENSES.md` inside `SI2_reproducibility.zip`. These grants apply only to rights held by the package contributors. Third-party materials retain their original licences; neither grant overrides provider terms or covers the excluded Maya source workbook and concentration matrices.
+
+
+## Batch feedback and pXRF-only Paphos partitions
+
+These V11 additions are result-informed revision sensitivities, not preregistered primary analyses. `Sensitivity_Analyses/PROTOCOL.json` summarises settings implemented in the selection script before new path generation. Original measurements, reference memberships, all 100 starts in each case, model parameters and original 9,400 acquisition configurations are preserved.
+
+`Sensitivity_Analyses/results/S52_batch_feedback.csv` reports feedback after individual, five-specimen and ten-specimen batches. The numerical forest and response scaling stay fixed within a batch; DWU density tracks remaining candidates. NAA is revealed only when a batch returns. `selection_budget` is the first position supplying all members; `returned_budget` is the committed measurement count when their results are available. Random expectations integrate the original conditional CDF under the same return schedule, rather than rounding its mean. `delta_random` and `delta_initial` are paired within original starts. Both MU/DWU and all six Paphos targets are scored; Maya retains both systems and k=2/3/5. The compact SI table reports k=2; full results and start-level endpoints are in CSV.
+
+`Sensitivity_Analyses/results/S53_pxrf_partition.csv` reports Paphos quota and fabric rules with 10, 20 and 21 Ward clusters from pXRF alone. Ward21 matches the number of released selection codes and is the fixed main partition check. Original comparison-member IDs remain unchanged, even for CYP-B and IMP-A targets. Twenty shared archived AMG orders enter each fabric setting. Codes for new clusters are ordered by their smallest object ID. All 97 objects participate. Original stratified starts are retained; this tests partition sensitivity and does not resolve historical metadata timing. Global spread, forest and random paths are unchanged comparators.
+
+The new full paths are consolidated in `Sensitivity_Analyses/results/new_acquisition_paths.json.gz`. `batch_endpoints.csv`, `batch_exact_random.csv` and `partition_endpoints.csv.gz` retain start-level calculations. `batch_validation.json` records batch1 path checks for two archived starts per case/rule and first-batch hidden-response perturbations. `analysis_validation.json` checks complete non-repeating paths and paired scoring. These are automated computational checks; no new author attestation of independent human validation is inferred.
+
+To reproduce from the extracted root (the private Maya adapter input is required):
+
+```text
+python Analysis/prepare_maya_inputs.py --source-xlsx PATH_TO_mmc2.xlsx
+python Sensitivity_Analyses/run_sensitivities.py --phase all --workers 8
+```
+
+The script resumes completed jobs in its own result folders. Individual cached jobs are computational intermediates; the public archive supplies the consolidated full paths and result tables. The newly built `Analysis/selector/maya_inputs.npz` is not redistributed.
+
+## Supplementary table locations
+
+Original table identifiers remain stable, including S45 and S48. `TABLE_ARCHIVE_MAP.csv` maps original and new S52/S53 tables to SI1 or the extended scientific report. `Supporting_results/extended_supplement/Extended_results.docx` retains relocated prediction, local Kourion, reconstruction, regret and detailed path/geometry records and methods. A Chinese reading companion is supplied in the same folder. The original result files and executable entry points retain their paths. Neutral table handles in SI1 resolve through this README and the map; existing repository directories were not cosmetically renamed.
