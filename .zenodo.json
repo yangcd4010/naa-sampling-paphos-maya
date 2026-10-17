@@ -1,0 +1,56 @@
+{
+  "title": "NAA sampling in Paphos and Classic Maya ceramics: data and numerical analyses",
+  "upload_type": "software",
+  "version": "v1.0.7",
+  "publication_date": "2026-10-17",
+  "description": "<p>Data and numerical analysis code supporting <em>Retrospective evaluation of neutron activation analysis sampling for archaeological comparisons in Paphos and Classic Maya ceramics</em> (manuscript).</p>\n<p>The repository provides acquisition paths, numerical evaluation scripts, result tables and finished figures for 97 Paphos amphora fragments and 183 object-matched pXRF and NAA records from ten Classic Maya sites. Analyses evaluate the measurement budgets required to obtain repeated members of archaeological comparison groups, using exact conditional random expectations, paired contrasts and sensitivity analyses.</p>\n<p>README.md provides file and execution instructions; PRIMARY_RESULTS_k2.csv reports the primary two-member results; SI2_reproducibility.zip contains the data and numerical analyses. Source-dependent Maya calculations use the provider workbook linked in the README. Author-created data and documentation use CC BY 4.0; author-created code uses MIT, as specified in LICENSES.md.</p>",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Yang, Chengda",
+      "affiliation": "Department of Archaeology and Cultural Relics, School of History, Nanjing University",
+      "orcid": "0009-0009-9679-3597"
+    },
+    {
+      "name": "Zhou, Xueying",
+      "affiliation": "Department of Archaeology and Cultural Relics, School of History, Nanjing University"
+    },
+    {
+      "name": "Zuo, Qian",
+      "affiliation": "School of Economics, Fuyang Normal University",
+      "orcid": "0009-0000-6641-4220"
+    }
+  ],
+  "keywords": [
+    "Archaeological sampling",
+    "Ceramic provenance",
+    "Portable X-ray fluorescence",
+    "Neutron activation analysis",
+    "Sequential selection",
+    "Paphos amphorae",
+    "Classic Maya ceramics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/yangcd4010/naa-sampling-paphos-maya/tree/v1.0.7",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.17632/ydgs3z4g76.1",
+      "relation": "references",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.1016/j.jas.2021.105436",
+      "relation": "references",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.1016/j.jasrep.2021.102819",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ]
+}
