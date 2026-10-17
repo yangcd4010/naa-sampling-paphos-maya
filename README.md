@@ -1,12 +1,12 @@
 # NAA sampling in Paphos and Classic Maya ceramics: data and numerical analyses
 
-Version: v1.0.5
+Version: v1.0.6
 
 This archive supports a retrospective evaluation of NAA acquisition in a fixed pool of 97 Paphos amphora fragments and 183 Classic Maya ceramics. It contains source inputs that may be redistributed, reference-member definitions, acquisition paths, numerical analysis code, result tables and finished figures. Measurements, reference memberships, acquisition paths and reported numerical results are unchanged from v1.0.4.
 
-Repository release: https://github.com/yangcd4010/naa-sampling-paphos-maya/releases/tag/v1.0.5
+Repository release: https://github.com/yangcd4010/naa-sampling-paphos-maya/releases/tag/v1.0.6
 
-Zenodo version history: https://doi.org/10.5281/zenodo.23250701. Select v1.0.5 and use its version-specific DOI when citing this release.
+Zenodo version history: https://doi.org/10.5281/zenodo.23250701. Select v1.0.6 and use its version-specific DOI when citing this release.
 
 ## Files and first steps
 
